@@ -1,0 +1,291 @@
+/*HEADER*/ 
+
+header{
+    background-color: black;
+    background-image: url(images/header.jpg);
+    background-position-y: 45%;
+    background-size: 100%;
+    text-align: center;
+    text-indent: 38px;
+    padding: 30px 0px;
+}
+
+header a{
+    color: white;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-decoration: none;
+    text-shadow:
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    transition: 0.3s;
+    
+}
+
+header a:hover {
+    color: #47F4FF;
+    text-shadow:
+        -2px -2px 0 #006d74,  
+        2px -2px 0 #006d74,
+        -2px 2px 0 #006d74,
+        2px 2px 0 #006d74;
+}
+
+header .mobile{
+    display: none;
+}
+
+li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.home{
+    background-image:url(images/home.jpg);
+    height: 475px;
+}
+
+.desktop_logo a{
+    background-image:url(images/Pop_Logo.png);
+    background-size: 225px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -99999999999999px;
+    top: -1px;
+    width: 225px;
+    height: 130px;
+}
+
+.mobile_logo{
+    display: none;
+}
+
+.view{
+    display: none;
+}
+
+@media screen and (max-width: 1185px) {
+    .home{
+        background-image:url(images/header.jpg);
+        height: 200px;
+    }
+    
+    header .desktop{
+        display: none;
+    }
+    
+    header .mobile{
+        display: inline-block;
+    }
+
+    .desktop_logo a{
+        display: none;
+    }
+
+    .mobile_logo{
+        background-image:url(images/Pop_Logo.png);
+        background-size: 250px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        text-indent: -99999999999999px;
+        top: -1px;
+        width: 250px;
+        height: 130px;
+        padding: 20px;
+    }
+
+    .view{
+        height: 500px;
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*BODY*/
+
+body{
+    background-color: black;
+    color: white;
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    font-size:45px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.music{
+    text-align: center;
+}
+
+.imgK {
+    float: right;
+    margin-left: 30px;
+    width: 600px;
+}
+
+.imgA {
+    float: left;
+    margin-right: 30px;
+    width: 600px;
+}
+  
+.clearfix {
+    overflow: auto;
+    margin: 30px;
+  }
+
+.kiaraAboutText{
+    clear: right;
+}
+
+.fav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.favObj{
+    margin: 20px;
+}
+
+.player{
+    width: 40%;
+    margin-left: 30%;
+}
+
+/*FEATURES*/
+
+.features{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.features figure{
+    margin: auto;
+    text-align: center;
+    width: 375px;
+    padding: 31px;
+}
+
+.features figure img{
+    width: 375px;
+}
+
+.features figure figcaption a{
+    color: white;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.features figure figcaption a:hover {
+    color: #47F4FF;
+    text-shadow:
+        -2px -2px 0 #006d74,  
+        2px -2px 0 #006d74,
+        -2px 2px 0 #006d74,
+        2px 2px 0 #006d74;
+}
+
+.pic{
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poem{
+    padding: 0px 40px 40px 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.text{
+    padding: 0px 50px;
+    margin: 20px 60px;
+}
+
+.wide{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    margin: 30px;
+    padding: 50px 75px;
+    transition: 0.3s;
+}
+
+.wide:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+.white{
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    text-align: center
+}
+
+.white a{
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.white a:hover {
+    color: #47F4FF;
+    text-shadow:
+        -2px -2px 0 #006d74,  
+        2px -2px 0 #006d74,
+        -2px 2px 0 #006d74,
+        2px 2px 0 #006d74;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+.aLogo{
+    height: 30px;
+    margin-left: 5px;
+}
